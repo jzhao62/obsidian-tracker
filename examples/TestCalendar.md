@@ -9,6 +9,7 @@ searchType: tag
 searchTarget: meditation
 datasetName: Meditation
 folder: diary
+endDate: 2021-01-31
 month:
 ```
 
@@ -21,6 +22,7 @@ searchType: tag
 searchTarget: exercise-pushup
 datasetName: PushUp
 folder: diary
+endDate: 2021-01-31
 month:
     startWeekOn: 'Sun'
     threshold: 40
@@ -38,6 +40,7 @@ searchType: tag
 searchTarget: meditation
 datasetName: Meditation
 folder: diary
+endDate: 2021-01-31
 month:
     startWeekOn: 'Sun'
     color: steelblue
@@ -46,21 +49,24 @@ month:
 ```
 
 ### Colored by Values
-Use parameter `circleColorByValue`, color the circles based on the values
+Use parameters `circleColorByValue`, `yMin`, and `yMax`, to color the circles based on the values
 ``` tracker
 searchType: tag
 searchTarget: exercise-pushup
 datasetName: PushUp
 folder: diary
+endDate: 2021-01-31
 month:
     startWeekOn:
-    threshold: 40
+    threshold: 10
     color: green
     headerMonthColor: orange
     dimNotInMonth: false
     todayRingColor: orange
     selectedRingColor: steelblue
     circleColorByValue: true
+    yMin: 0
+    yMax: 50
     showSelectedValue: true
 ```
 
@@ -90,7 +96,7 @@ month:
     selectedRingColor: steelblue
     circleColorByValue: true
     showSelectedValue: true
-    initMonth: 2021-09
+    initMonth: 2021-01
 ```
 
 Specify the initial month by relative date
@@ -109,7 +115,7 @@ month:
     selectedRingColor: steelblue
     circleColorByValue: true
     showSelectedValue: true
-    initMonth: -1M
+    initMonth: -47M
 ```
 
 ## Multiple targets
@@ -122,6 +128,7 @@ searchType: tag
 searchTarget: exercise-pushup, meditation
 datasetName: PushUp, Meditation
 folder: diary
+endDate: 2021-01-31
 month:
     dataset: 0, 1
     startWeekOn: 'Sun'
@@ -142,6 +149,7 @@ searchType: tag
 searchTarget: exercise-pushup, meditation
 datasetName: PushUp, Meditation
 folder: diary
+endDate: 2021-01-31
 month:
     mode: annotation
     startWeekOn: 'Sun'
@@ -159,6 +167,7 @@ searchType: tag
 searchTarget: exercise-pushup, meditation
 datasetName: PushUp, Meditation
 folder: diary
+endDate: 2021-01-31
 month:
     mode: annotation
     startWeekOn: 'Sun'

@@ -21,13 +21,14 @@ searchType: tag
 searchTarget: weight
 folder: diary
 summary:
-    template: "Minimum: {{min()}}kg\nMaximum: {{max()}}kg\nMedian: {{median()}}kg\nAverage: {{average()}}kg"
+    template: "First: {{first()}}kg\nLast: {{last()}}kg\nMinimum: {{min()}}kg\nMaximum: {{max()}}kg\nMedian: {{median()}}kg\nAverage: {{average()}}kg"
 ```
 
 ``` tracker
 searchType: tag
 searchTarget: weight
 folder: diary
+endDate: 2021-01-31
 line:
     title: Weight Log
     yAxisLabel: Weight

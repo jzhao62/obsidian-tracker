@@ -1,5 +1,26 @@
 # Release Notes
 
+## 1.15.0
+
+- Fix: Minor spelling error in Examples.md
+- Added new expression functions - First and Last
+- Updated dates in examples to fix plots
+- Respect thresholds in scaled months
+- Update dependencies
+
+## 1.14.0
+
+- Update dependencies
+- Prevent overlapping external labels in pie chart
+- Enable Stacked Bar Chart
+
+## 1.13.3
+
+- Update dependencies
+- Fix typo in FinanceTracker.md
+- Fix typo in TestExpression.md
+- Update main.ts - use new format for {{average}}
+
 ## 1.13.2
 
 - Update dependencies
